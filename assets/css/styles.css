@@ -69,7 +69,7 @@ nav ul li a {
 /* Hero Text Alignment Fix */
 .intro {
     flex: 1;
-    text-align: left;
+    text-align: left; /* Ensures left alignment */
 }
 
 .intro h1 {
@@ -77,7 +77,7 @@ nav ul li a {
     font-weight: bold;
     font-size: 74px;
     margin: 0;
-    text-align: left;
+    text-align: left; /* Force left alignment */
 }
 
 .blue {
@@ -92,7 +92,7 @@ nav ul li a {
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
     margin: 20px 0;
-    text-align: left;
+    text-align: left; /* Ensures left alignment */
 }
 
 /* Buttons */
@@ -341,7 +341,7 @@ nav ul li a {
 
 /* Contact Section Layout */
 .contact-section {
-    background-color: #000;
+    background-color: #000; /* Black background */
     padding: 80px 0;
     display: flex;
     justify-content: center;
@@ -351,7 +351,7 @@ nav ul li a {
 /* Container with Flexbox */
 .contact-container {
     display: flex;
-    max-width: 80%;
+    max-width: 80%; 
     width: 90%;
     justify-content: space-between;
     align-items: stretch;
@@ -365,9 +365,10 @@ nav ul li a {
     color: white;
 }
 
+/* Contact Info Box (Same Size as Reference) */
 .contact-info-box {
     flex: 1;
-    max-width: 420px;
+    max-width: 420px; /* Adjusted width */
     background-color: rgba(38, 38, 38, 0.85);
     border-radius: 15px;
     padding: 40px;
@@ -377,6 +378,106 @@ nav ul li a {
     justify-content: center;
     align-items: flex-start;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Title */
+.contact-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 32px; /* Adjusted to match */
+    margin-bottom: 20px;
+}
+
+/* Contact Description */
+.contact-description {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 25px;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Larger Icons */
+.contact-details i {
+    font-size: 22px;
+    color: #bbb;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 24px; /* Match reference */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #0099ff;
+}
+
+.highlight {
+    color: #0099ff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 95%;
+    padding: 12px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+textarea {
+    height: 50px;;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #0099ff;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #0077cc;
 }
 
 /* Media Queries */
@@ -431,6 +532,17 @@ nav ul li a {
         flex-direction: column;
         gap: 20px;
     }
+
+    /* Center Project Cards on Mobile */
+    .projects-container {
+        justify-content: center; /* Center the project cards */
+        gap: 20px; /* Reduced gap for better fit on smaller screens */
+    }
+
+    /* Hiding Main Image in About Section on Mobile */
+    .about-image {
+        display: none; /* Hides the image on mobile devices */
+    }
 }
 
 @media (max-width: 480px) {
@@ -458,5 +570,16 @@ nav ul li a {
 
     .contact-container {
         flex-direction: column;
+    }
+
+    /* Center Project Cards on Smaller Screens */
+    .projects-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Hide About Image on Mobile */
+    .about-image {
+        display: none;
     }
 }
