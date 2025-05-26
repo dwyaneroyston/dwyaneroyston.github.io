@@ -269,6 +269,7 @@ nav ul li a {
     transform: translateY(-5px);
 }
 
+
 /* Project Image */
 .project-image {
     width: 100%;
@@ -303,6 +304,14 @@ nav ul li a {
     margin: 10px 0;
 }
 
+/* Tech Stack */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
 .tech-badge {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -312,6 +321,16 @@ nav ul li a {
     color: white;
     text-transform: uppercase;
 }
+
+.html { background: #e44d26; }
+.css { background: #264de4; }
+.js { background: #f7df1e; color: black; }
+.php { background: #777bb3; }
+.sql { background: #f29111; }
+.dart { background: #00c4b3; }
+.flutter { background: #42a5f5; }
+.firebase { background: #ffcb2b; color: black; }
+.figma { background: #a259ff; }
 
 /* Buttons */
 .project-buttons {
@@ -338,6 +357,7 @@ nav ul li a {
 .project-btn:hover {
     background: #333;
 }
+
 
 /* Contact Section Layout */
 .contact-section {
