@@ -12,3 +12,9 @@ document.querySelectorAll("nav ul li a").forEach(anchor => {
         }
     });
 });
+  const cursor = document.querySelector('.glow-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
