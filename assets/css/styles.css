@@ -228,6 +228,7 @@ nav ul li a:hover::after {
 /* Tools & Technologies Section */
 .tools-container {
     padding: 40px 20px;
+    
 }
 
 .title {
@@ -258,12 +259,14 @@ nav ul li a:hover::after {
 
 /* Category Box Styling */
 .category {
-    background: #111;
+    background: #1B1A1B;
+    /* box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); */
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 /* Icon Grid */
@@ -308,7 +311,7 @@ nav ul li a:hover::after {
 
 /* Project Card */
 .project-card {
-    background: #111;
+    background:#111111;
     border-radius: 15px;
     padding: 20px;
     width: 350px;
@@ -347,7 +350,7 @@ nav ul li a:hover::after {
     font-size: 14px;
     font-weight: 50;
     line-height: 1.6;
-    color: #ccc;
+    color:#A1A1AA;
     margin-bottom: 10px;
 }
 
