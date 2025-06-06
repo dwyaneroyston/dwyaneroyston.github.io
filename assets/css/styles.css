@@ -75,40 +75,104 @@ body {
   transform: translateX(-50%) translateY(0);
 }
 
-/* === HERO SECTION === */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 50px;
-    gap: 120px;
+/* === ANIMATIONS === */
+@keyframes slideIntroFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-/* === PHONE MOCKUP === */
+@keyframes slideMockupFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 120px;
+}
+
+/* === PHONE MOCKUP (LEFT -> RIGHT) === */
 .phone-mockup {
-    position: relative;
-    width: 300px;
-    height: auto;
+  position: relative;
+  width: 300px;
+  height: auto;
+  animation: slideMockupFromLeft 1.2s ease-out forwards;
+  opacity: 0;
 }
 
 .mockup-image {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
+/* === INTRO TEXT (RIGHT -> LEFT) === */
 .intro {
-    flex: 1;
-    text-align: left;
+  flex: 1;
+  text-align: left;
+  animation: slideIntroFromRight 1.2s ease-out forwards;
+  opacity: 0;
 }
 
 .intro h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 74px;
-    margin: 0;
-    text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 74px;
+  margin: 0;
+  text-align: left;
 }
 
+.intro p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: #2FB8F6;
+  color: white;
+}
+
+.secondary {
+  border: 2px solid #2FB8F6;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #2FB8F6;
+}
 .blue {
     color: #2FB8F6;
 }
@@ -116,37 +180,6 @@ body {
 .gray {
     color: #8a8a8a;
 }
-
-.intro p {
-    font-family: 'Outfit', sans-serif;
-    font-size: 20px;
-    margin: 20px 0;
-    text-align: left;
-}
-
-.buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.btn {
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.primary {
-    background-color: #2FB8F6;
-    color: white;
-}
-
-.secondary {
-    border: 2px solid #2FB8F6;
-    color: white;
-}
-
 /* === ABOUT SECTION === */
 .about-section {
     padding: 100px 50px;
@@ -508,102 +541,148 @@ textarea {
     background-color: #0077cc;
 }
 
-/* === MEDIA QUERIES === */
-@media (max-width: 1200px) {
-    .tools-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-image {
-        order: -1;
-    }
-
-    .hero {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .intro h1 {
-        font-size: 60px;
-    }
-}
-
 @media (max-width: 768px) {
     body {
-        margin: 0 20px;
+        margin: 0 10px;
+        padding-top: 10px;
     }
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .nav-wrapper {
+        padding: 10px 0;
     }
 
-    .hero {
-        padding: 30px;
-        gap: 30px;
-    }
-
-    .intro h1 {
-        font-size: 40px;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .projects-container {
+    .icon-navbar ul {
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 8px;
+        padding: 6px 10px;
     }
 
-    .about-image {
-        display: none;
+    .icon-navbar ul li a {
+        padding: 6px;
     }
-}
 
-@media (max-width: 480px) {
-    .intro h1 {
-        font-size: 30px;
+    .icon-navbar ul li img {
+        width: 18px;
+        height: 18px;
     }
 
     .hero {
-        padding: 20px;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 40px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+        text-align: center;
     }
 
     .intro p {
-        font-size: 18px;
+        font-size: 16px;
+        text-align: center;
     }
 
     .buttons {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 
-    .tools-grid {
-        grid-template-columns: 1fr;
+    .phone-mockup {
+        display: none;
     }
 
-    .contact-container {
+    .about-section {
+        padding: 50px 20px;
+    }
+
+    .about-content {
         flex-direction: column;
+        gap: 20px;
     }
 
-    .projects-container {
-        justify-content: center;
-        gap: 15px;
+    .about-text {
+        font-size: 16px;
+        line-height: 1.6;
     }
 
     .about-image {
         display: none;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tools-grid .category {
+        padding: 10px;
+    }
+
+    .icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .projects-section {
+        padding: 40px 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 16px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .tech-stack {
+        gap: 5px;
+    }
+
+    .contact-section {
+        padding: 40px 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .contact-description,
+    .contact-details p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 12px;
     }
 }
