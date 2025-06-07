@@ -151,8 +151,8 @@ body {
 }
 
 .btn {
-  padding: 12px 24px;
-  border-radius: 25px;
+  padding: 10px 24px;
+  border-radius: 10px;
   font-size: 16px;
   text-decoration: none;
   font-weight: bold;
@@ -435,7 +435,7 @@ body {
 .contact-info-box {
     flex: 1;
     max-width: 420px;
-    background-color: rgba(38, 38, 38, 0.85);
+    background-color: rgba(37, 37, 37, 0.85);
     border-radius: 15px;
     padding: 40px;
     color: white;

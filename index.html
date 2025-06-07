@@ -1,290 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dwyane Royston - Portfolio</title>
-    <link rel="icon" href="assets/images/main.png" type="image/png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dwyane Royston - Portfolio</title>
+  <link rel="icon" href="assets/images/main.png" type="image/png" />
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" /> 
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
-   <header class="nav-wrapper" >
-    
-  <nav class="icon-navbar">
-    <ul>
-      <li><a href="#home" data-tooltip="Home"><img src="assets/images/navbar/home.png" alt="Home" /></a></li>
-      <li><a href="#about" data-tooltip="About"><img src="assets/images/navbar/about.png" alt="About" /></a></li>
-      <li><a href="#projects" data-tooltip="Projects"><img src="assets/images/navbar/projects.png" alt="Projects" /></a></li>
-      <li><a href="#technologies" data-tooltip="Technologies"><img src="assets/images/navbar/tech.png" alt="Technologies" /></a></li>
-      <li><a href="#contact" data-tooltip="Contact"><img src="assets/images/navbar/contact.png" alt="Contact" /></a></li>
-    </ul>
-  </nav>
-</header>
 
-    <section class="hero">
-<div class="phone-mockup">
-    <img src="assets/images/iphone-13.png" alt="iPhone Mockup" class="mockup-image">
+  <header class="nav-wrapper">
+    <nav class="icon-navbar">
+      <ul>
+        <li><a href="#home" data-tooltip="Home"><img src="assets/images/navbar/home.png" alt="Home" /></a></li>
+        <li><a href="#about" data-tooltip="About"><img src="assets/images/navbar/about.png" alt="About" /></a></li>
+        <li><a href="#projects" data-tooltip="Projects"><img src="assets/images/navbar/projects.png" alt="Projects" /></a></li>
+        <li><a href="#technologies" data-tooltip="Technologies"><img src="assets/images/navbar/tech.png" alt="Technologies" /></a></li>
+        <li><a href="#contact" data-tooltip="Contact"><img src="assets/images/navbar/contact.png" alt="Contact" /></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  </div>
-        <div class="intro">
-            <h1><span class="blue">FLUTTER</span><br> <span class="gray">DEVELOPER</span></h1>
-            <p>Building high-performance, scalable mobile applications with Flutter. I specialize in creating responsive UIs, integrating APIs, and optimizing app performance to deliver seamless and efficient user experiences.</p>
-            <div class="buttons">
-                <a href="assets/docs/dwyane.pdf" class="btn primary">Resume</a>
-                <a href="#contact" class="btn secondary">Let's Talk</a>
-            </div>
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="fade-left">
+    <div class="phone-mockup">
+      <img src="assets/images/iphone-13.png" alt="iPhone Mockup" class="mockup-image" />
+    </div>
+    <div class="intro">
+      <h1><span class="blue">FLUTTER</span><br> <span class="gray">DEVELOPER</span></h1>
+      <p>Building high-performance, scalable mobile applications with Flutter. I specialize in creating responsive UIs, integrating APIs, and optimizing app performance to deliver seamless and efficient user experiences.</p>
+      <div class="buttons">
+        <a href="assets/docs/dwyane.pdf" class="btn primary">Resume</a>
+        <a href="#contact" class="btn secondary">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <h2 class="section-title" data-aos="fade-up">About me</h2>
+    <div class="about-content">
+      <div class="about-text" data-aos="fade-right">
+        <p>Hey, I’m Dwyane Royston — or just <span class="blue">Roy</span>. I’m a Flutter <span class="blue">developer</span> from Chennai, India. I’m passionate about building high-performance mobile apps that make a real impact. My journey into app development started with a love for tech and problem-solving.</p>
+        <p>Flutter’s my tool of choice for creating beautiful, scalable apps. I’ve got a B.Sc. in Computer Science and I’ve worked on several projects, honing my skills in UI/UX design, API integration, and performance optimization. Feel free to check out my work and reach out if you want to collaborate or chat about opportunities!</p>
+      </div>
+      <div class="about-image" data-aos="fade-left">
+        <div class="image-container">
+          <div class="image-box"></div>
+          <img src="assets/images/about.png" alt="Dwyane Royston">
         </div>
-    </section>
-    <section id="about" class="about-section">
-        <h2 class="section-title">About me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Hey, I’m Dwyane Royston — or just <span class="blue">Roy</span>. I’m a Flutter <span class="blue">developer</span> from Chennai, India. I’m passionate about building high-performance mobile apps that make a real impact. My journey into app development started with a love for tech and problem-solving.</p>
-                <p>Flutter’s my tool of choice for creating beautiful, scalable apps. I’ve got a B.Sc. in Computer Science and I’ve worked on several projects, honing my skills in UI/UX design, API integration, and performance optimization. Feel free to check out my work and reach out if you want to collaborate or chat about opportunities!</p>
-            </div>
-            <div class="about-image">
-                <div class="image-container">
-                    <div class="image-box"></div>
-                    <img src="assets/images/about.png" alt="Dwyane Royston">
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS AND TECHNOLOGIES -->
+  <section id="technologies" class="tools-container">
+    <h2 class="title" data-aos="fade-up">Tools and Technologies</h2>
+    <div class="tools-grid">
+      <div class="category full-width" data-aos="fade-right">
+        <h3>Core Expertise</h3>
+        <div class="icons">
+          <img src="assets/images/icons/dart.png" alt="Dart">
+          <img src="assets/images/icons/flutter.png" alt="Flutter">
+          <img src="assets/images/icons/Kotlin.png" alt="Kotlin">                    
+          <img src="assets/images/icons/java.png" alt="Java">
         </div>
-    </section>
-    <section id="technologies" class="tools-container">
-        <h2 class="title">Tools and Technologies</h2>
-        <div class="tools-grid">
-            <div class="category full-width">
-                <h3>Core Expertise</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/dart.png" alt="Dart" title="Dart">
-                    <img src="assets/images/icons/flutter.png" alt="Flutter">
-                    <img src="assets/images/icons/Kotlin.png" alt="Kotlin">                    
-                    <img src="assets/images/icons/java.png" alt="Java">
-
-                </div>
-            </div>
-            <div class="category two-columns">
-                <h3>Languages</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/dart.png" alt="Dart">
-                    <img src="assets/images/icons/java.png" alt="Java">
-                    <img src="assets/images/icons/js.png" alt="JavaScript">
-                    <img src="assets/images/icons/Kotlin.png" alt="Kotlin">                    
-
-                </div>
-            </div>
-            <div class="category two-columns">
-                <h3>Front End</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/html.png" alt="HTML">
-                    <img src="assets/images/icons/css.png" alt="CSS">
-                    <img src="assets/images/icons/js.png" alt="JavaScript">
-                </div>
-            </div>
-            <div class="category">
-                <h3>Frameworks and Libraries</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/flutter.png" alt="Flutter">
-                    <img src="assets/images/icons/jetpack.png" alt="Jetpack">
-                    <img src="assets/images/icons/bootstrap.png" alt="Bootstrap">
-                </div>
-            </div>
-            <div class="category">
-                <h3>Back End</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/sql.png" alt="SQL">
-                    <img src="assets/images/icons/firebase.png" alt="Firebase">
-                </div>
-            </div>
-            <div class="category">
-                <h3>UI/UX</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/figma.png" alt="Figma">
-                    <img src="assets/images/icons/canva.png" alt="Canva">
-                </div>
-            </div>
-            <div class="category full-width">
-                <h3>Version Control and Productivity Tools</h3>
-                <div class="icons">
-                    <img src="assets/images/icons/github.png" alt="GitHub">
-                    <img src="assets/images/icons/git.png" alt="Git">
-                    <img src="assets/images/icons/vscode.png" alt="VS Code">
-                    <img src="assets/images/icons/android.png" alt="Android Studio">
-                    <img src="assets/images/icons/intellij.png" alt="IntelliJ">
-                    <img src="assets/images/icons/notion.png" alt="Notion">
-                    <img src="assets/images/icons/chat.png" alt="ChatGPT">
-                    <img src="assets/images/icons/postman.png" alt="Postman">
-                </div>
-            </div>
+      </div>
+      <div class="category two-columns" data-aos="fade-left">
+        <h3>Languages</h3>
+        <div class="icons">
+          <img src="assets/images/icons/dart.png" alt="Dart">
+          <img src="assets/images/icons/java.png" alt="Java">
+          <img src="assets/images/icons/js.png" alt="JavaScript">
+          <img src="assets/images/icons/Kotlin.png" alt="Kotlin">                    
         </div>
-    </section>
-    
-    <section id = "projects" class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-
-            <div class="project-card">
-                <img src="assets/images/rentsync.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">RentSync
-                </h3>
-                <p class="project-description">
-                   RentSync is a Flutter-Firebase app that connects tenants and landlords for easy service requests and maintenance tracking. Tenants can submit issues, while landlords manage requests and stay updated — all in one streamlined platform.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge flutter">Flutter </span>
-                    <span class="tech-badge dart">Dart </span>      
-                    <span class="tech-badge firebase">Firebase </span>
-                    <span class="tech-badge figma">Figma</span>
-                </div>
-    
-                <div class="project-buttons">
-                    <a href="https://github.com/dwyaneroyston/rent_sync/" class="project-btn">
-                        <img src="assets/images/icons/github.png" width="18"> GitHub
-                    </a>
-                    <a href="" class="project-btn">
-                        <img src="assets/images/icons/demo.png" width="18"> Demo
-                    </a>
-                </div>
-            </div>
-                        <!-- Project 2 -->
-
-            <div class="project-card">
-                <img src="assets/images/taskbox.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">Task Box</h3>
-                <p class="project-description">
-                   Task Box is a Kotlin-Compose to-do app for organizing tasks with ease. Users can create tasks, add sub-tasks, and assign categories — all stored locally with Room DB. It’s a clean, offline-first productivity tool designed for focus and simplicity.
-                </p>
-    
-                <div class="tech-stack">
-                    <span class="tech-badge html">Kotlin</span>
-                    <span class="tech-badge css">Jetpack Compose</span>
-                    <span class="tech-badge android">Android Studio</span>
-                    <span class="tech-badge flutter">Room DB</span>
-                    <span class="tech-badge figma">figma</span>
-                </div>
-    
-                <div class="project-buttons">
-                    <a href="https://github.com/dwyaneroyston/taskbox.git" class="project-btn">
-                        <img src="assets/images/icons/github.png" width="18"> GitHub
-                    </a>
-                    <a href=" " class="project-btn">
-                        <img src="assets/images/icons/demo.png" width="18"> Demo
-                    </a>
-                </div>
-            </div>
-
-             <!-- Project 3 -->
-
-            <div class="project-card">
-                <img src="assets/images/project2.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">Portfolio
-                </h3>
-                <p class="project-description">
-                    My portfolio features a selection of projects that highlight my skills in web design, development, and user experience. Each project is designed with a focus on clean, responsive design, intuitive navigation, and seamless functionality to deliver effective digital solutions.
-                </p>
-    
-                <div class="tech-stack">
-                    <span class="tech-badge html">HTML</span>
-                    <span class="tech-badge css">CSS</span>
-                    <span class="tech-badge js">JavaScript</span>
-                    <span class="tech-badge figma">Figma</span>
-                </div>
-    
-                <div class="project-buttons">
-                    <a href="https://github.com/dwyaneroyston/dwyaneroyston.github.io.git" class="project-btn">
-                        <img src="assets/images/icons/github.png" width="18"> GitHub
-                    </a>
-                    <a href=" " class="project-btn">
-                        <img src="assets/images/icons/demo.png" width="18"> Demo
-                    </a>
-                </div>
-            </div>
-
-                         <!-- Project 4 -->
-
-             <div class="project-card">
-                <img src="assets/images/project1.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">Cafe Radiance</h3>
-                <p class="project-description">
-                    Cafe Radiance is a responsive website designed to enhance a coffee shop’s digital presence. It features an intuitive menu, online ordering, and tools for managing orders and customer information, ensuring a seamless user experience.
-                </p>
-    
-                <div class="tech-stack">
-                    <span class="tech-badge php">PHP</span>
-                    <span class="tech-badge html">HTML</span>
-                    <span class="tech-badge css">CSS</span>
-                    <span class="tech-badge js">JavaScript</span>
-                </div>
-    
-                <div class="project-buttons">
-                    <a href="https://github.com/dwyaneroyston/caferadiance" class="project-btn">
-                        <img src="assets/images/icons/github.png" width="18"> GitHub
-                    </a>
-                    <a href=" " class="project-btn">
-                        <img src="assets/images/icons/demo.png" width="18"> Demo
-                    </a>
-                </div>
-            </div>
-
-
-             
-    
-    
+      </div>
+      <div class="category two-columns" data-aos="fade-right">
+        <h3>Front End</h3>
+        <div class="icons">
+          <img src="assets/images/icons/html.png" alt="HTML">
+          <img src="assets/images/icons/css.png" alt="CSS">
+          <img src="assets/images/icons/js.png" alt="JavaScript">
         </div>
-    </section>
-    <section id = "contact" class="contact-section">
-        <div class="contact-container">
-             <!-- Contact Info Box -->
-        <div class="contact-info-box">
-            <h2 class="contact-title">Contact <span class="highlight">Me</span></h2>
-            <p class="contact-description">Feel free to reach out for collaborations or just a chat.</p>
-            
-            <div class="contact-details">
-                <p><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/hMMcBPSucf2TNUXh8"> Chennai , Tamilnadu</a></p>
-                <p><i class="fas fa-envelope"></i> dwayneroyston11@gmail.com</p>
-                <p><i class="fas fa-phone"></i>9342862726</p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dwyane-royston/" > Chennai , Tamilnadu</a> </p>
-            </div>
-            
-        
+      </div>
+      <div class="category" data-aos="zoom-in">
+        <h3>Frameworks and Libraries</h3>
+        <div class="icons">
+          <img src="assets/images/icons/flutter.png" alt="Flutter">
+          <img src="assets/images/icons/jetpack.png" alt="Jetpack">
+          <img src="assets/images/icons/bootstrap.png" alt="Bootstrap">
         </div>
-     
-            <div class="contact-form">
-                <h2 class="contact-title">LET’S GET IN <span class="highlight">TOUCH</span></h2>
-                <p class="contact-description">
-                    Have something on your mind? Whether it’s a question, feedback, or an idea to collaborate, I’d love to hear from you.
-                    Feel free to fill out the form below, and I’ll get back to you soon.
-                </p>
-                <form action="https://api.web3forms.com/submit" method="post">
-                    <input type="hidden" name="access_key" value="042e456e-7afd-40e9-baa1-352afda928eb">
-
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name = "name " placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name = "email"placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name = "message" placeholder="Enter your message"></textarea>
-                    </div>
-                    <input type="hidden" name="redirect" value="/success.html">  
-                    <button type="submit" class="submit-btn">SEND</button>
-                </form>
-            </div>
+      </div>
+      <div class="category" data-aos="zoom-in">
+        <h3>Back End</h3>
+        <div class="icons">
+          <img src="assets/images/icons/sql.png" alt="SQL">
+          <img src="assets/images/icons/firebase.png" alt="Firebase">
         </div>
-    </section>
-    
-    
-    
-    <script src="assets/js/script.js"></script>
+      </div>
+      <div class="category" data-aos="zoom-in">
+        <h3>UI/UX</h3>
+        <div class="icons">
+          <img src="assets/images/icons/figma.png" alt="Figma">
+          <img src="assets/images/icons/canva.png" alt="Canva">
+        </div>
+      </div>
+      <div class="category full-width" data-aos="fade-up">
+        <h3>Version Control and Productivity Tools</h3>
+        <div class="icons">
+          <img src="assets/images/icons/github.png" alt="GitHub">
+          <img src="assets/images/icons/git.png" alt="Git">
+          <img src="assets/images/icons/vscode.png" alt="VS Code">
+          <img src="assets/images/icons/android.png" alt="Android Studio">
+          <img src="assets/images/icons/intellij.png" alt="IntelliJ">
+          <img src="assets/images/icons/notion.png" alt="Notion">
+          <img src="assets/images/icons/chat.png" alt="ChatGPT">
+          <img src="assets/images/icons/postman.png" alt="Postman">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card" data-aos="fade-up">
+        <img src="assets/images/appimages/rentdemo.png" alt="RentSync" class="project-image">
+        <h3 class="project-title">RentSync</h3>
+        <p class="project-description">
+          RentSync is a Flutter-Firebase app that connects tenants and landlords for easy service requests and maintenance tracking.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-badge flutter">Flutter</span>
+          <span class="tech-badge dart">Dart</span>      
+          <span class="tech-badge firebase">Firebase</span>
+          <span class="tech-badge figma">Figma</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/dwyaneroyston/rent_sync/" class="project-btn">
+            <img src="assets/images/icons/github.png" width="18"> GitHub
+          </a>
+          <a href="" class="project-btn">
+            <img src="assets/images/icons/demo.png" width="18"> Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/images/taskbox.png" alt="Task Box" class="project-image">
+        <h3 class="project-title">Task Box</h3>
+        <p class="project-description">
+          Kotlin + Jetpack Compose app for managing categorized tasks with sub-tasks, stored locally via Room DB.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-badge html">Kotlin</span>
+          <span class="tech-badge css">Jetpack Compose</span>
+          <span class="tech-badge android">Android Studio</span>
+          <span class="tech-badge flutter">Room DB</span>
+          <span class="tech-badge figma">Figma</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/dwyaneroyston/taskbox.git" class="project-btn">
+            <img src="assets/images/icons/github.png" width="18"> GitHub
+          </a>
+          <a href=" " class="project-btn">
+            <img src="assets/images/icons/demo.png" width="18"> Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/images/project2.png" alt="Portfolio" class="project-image">
+        <h3 class="project-title">Portfolio</h3>
+        <p class="project-description">
+          A responsive, minimal developer portfolio showcasing web and mobile projects with clean animations and design.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-badge html">HTML</span>
+          <span class="tech-badge css">CSS</span>
+          <span class="tech-badge js">JavaScript</span>
+          <span class="tech-badge figma">Figma</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/dwyaneroyston/dwyaneroyston.github.io.git" class="project-btn">
+            <img src="assets/images/icons/github.png" width="18"> GitHub
+          </a>
+          <a href=" " class="project-btn">
+            <img src="assets/images/icons/demo.png" width="18"> Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/images/project1.png" alt="Cafe Radiance" class="project-image">
+        <h3 class="project-title">Cafe Radiance</h3>
+        <p class="project-description">
+          Responsive coffee shop website with menu, order system, and clean UI.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-badge php">PHP</span>
+          <span class="tech-badge html">HTML</span>
+          <span class="tech-badge css">CSS</span>
+          <span class="tech-badge js">JavaScript</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/dwyaneroyston/caferadiance" class="project-btn">
+            <img src="assets/images/icons/github.png" width="18"> GitHub
+          </a>
+          <a href=" " class="project-btn">
+            <img src="assets/images/icons/demo.png" width="18"> Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info-box" data-aos="fade-right">
+        <h2 class="contact-title">Contact <span class="highlight">Me</span></h2>
+        <p class="contact-description">Feel free to reach out for collaborations or just a chat.</p>
+        <div class="contact-details">
+          <p><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/hMMcBPSucf2TNUXh8"> Chennai, Tamil Nadu</a></p>
+          <p><i class="fas fa-envelope"></i> dwayneroyston11@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 9342862726</p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dwyane-royston/">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="contact-form" data-aos="fade-left">
+        <h2 class="contact-title">LET’S GET IN <span class="highlight">TOUCH</span></h2>
+        <p class="contact-description">Have something on your mind? Feel free to fill out the form below.</p>
+        <form action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="042e456e-7afd-40e9-baa1-352afda928eb">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+          </div>
+          <input type="hidden" name="redirect" value="/success.html">  
+          <button type="submit" class="submit-btn">SEND</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true 
+      
+    });
+  </script>
 </body>
 </html>
