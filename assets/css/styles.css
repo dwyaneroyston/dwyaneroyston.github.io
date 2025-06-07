@@ -328,7 +328,7 @@ body {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px) !important;
 }
 
 .project-image {
@@ -391,7 +391,7 @@ body {
 .project-btn {
     background: #222;
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
