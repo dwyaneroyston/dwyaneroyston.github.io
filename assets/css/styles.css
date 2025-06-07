@@ -188,12 +188,31 @@ body {
 }
 
 .section-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+
+  background: linear-gradient(90deg, #2FB8F6, #fff, #2FB8F6);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: textFlow 5s linear infinite;
 }
+
+@keyframes textFlow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
 
 .about-content {
     display: flex;
@@ -581,13 +600,13 @@ textarea {
 
     .intro p {
         font-size: 16px;
-        text-align: center;
+        text-align: justify;
     }
 
     .buttons {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
     }
 
     .phone-mockup {
