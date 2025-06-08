@@ -51,7 +51,6 @@ body {
   filter: brightness(0) invert(1) drop-shadow(0 0 5px #2FB8F6);
 }
 
-/* Tooltip styling */
 .icon-navbar ul li a::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -75,7 +74,7 @@ body {
   transform: translateX(-50%) translateY(0);
 }
 
-/* === ANIMATIONS === */
+/* ANIMATIONS */
 @keyframes slideIntroFromRight {
   0% {
     opacity: 0;
@@ -98,7 +97,7 @@ body {
   }
 }
 
-/* === HERO SECTION === */
+/*HERO SECTION*/
 .hero {
   display: flex;
   align-items: center;
@@ -107,7 +106,7 @@ body {
   gap: 120px;
 }
 
-/* === PHONE MOCKUP (LEFT -> RIGHT) === */
+/*PHONE MOCKUP*/
 .phone-mockup {
   position: relative;
   width: 300px;
@@ -121,7 +120,6 @@ body {
   display: block;
 }
 
-/* === INTRO TEXT (RIGHT -> LEFT) === */
 .intro {
   flex: 1;
   text-align: left;
@@ -180,7 +178,8 @@ body {
 .gray {
     color: #8a8a8a;
 }
-/* === ABOUT SECTION === */
+
+/*ABOUT SECTION */
 .about-section {
     padding: 100px 50px;
     max-width: 1200px;
@@ -262,7 +261,7 @@ body {
     z-index: -1;
 }
 
-/* === TOOLS & TECHNOLOGIES SECTION === */
+/* TOOLS & TECHNOLOGIES SECTION */
 .tools-container {
     padding: 40px 20px;
 }
@@ -318,7 +317,7 @@ body {
     transform: scale(1.3);
 }
 
-/* === PROJECTS SECTION === */
+/* PROJECTS SECTION  */
 .projects-section {
     padding: 80px 50px;
     background-color:#111111; 
@@ -427,7 +426,7 @@ body {
     background: #333;
 }
 
-/* === CONTACT SECTION === */
+/* CONTACT SECTION */
 .contact-section {
     background-color:#111111; 
     padding: 80px 0;
