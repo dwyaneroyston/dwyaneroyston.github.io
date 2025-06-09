@@ -311,6 +311,8 @@ body {
 
 .tooltip-text {
     visibility: hidden;
+    max-width: 120px;
+     white-space: normal;
     background-color: #4e4e4e;
     color: #fff;
     text-align: center;
